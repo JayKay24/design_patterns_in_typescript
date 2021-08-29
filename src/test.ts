@@ -1,15 +1,6 @@
-let foo: string;
-let bar: boolean;
-let baz: number;
-let qux: string[];
-let quuz: [number, string];
-let coorge: { [key: number]: string };
-let grault: Set<number>;
+import { Cat, Dog } from './animals';
 
-foo = 'ABC';
-bar = true;
-baz = 123;
-qux = ['a', 'b', 'c'];
-quuz = [1, 'abc'];
-coorge = { 123: 'abc', 465: 'def' };
-grault = new Set([1, 2, 3]);
+const CAT = new Cat('Cosmo', 8);
+const DOG = new Dog('Rusty', 12);
+console.log(CAT.name);
+console.log(DOG.name);
