@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build; node ./dist/test.js",
+    "start": "npm run build && node ./dist/test.js",
     "build": "npm run clean && tsc -p src/",
+    "build:dev": "npm run prettier-format && npm run build",
     "build:watch": "tsc -p src/ -w",
     "clean": "rimraf dist/",
     "lint": "eslint src/ --ext .ts",
