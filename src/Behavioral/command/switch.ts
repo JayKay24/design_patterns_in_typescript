@@ -11,7 +11,7 @@ export default class Switch {
     this.#history = [];
   }
 
-  showHistory() {
+  showHistory(): void {
     // Print the history of each time a command was invoked
     this.#history.forEach((row) => {
       const [dateOfInvocation, command] = row;
